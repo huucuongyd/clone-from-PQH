@@ -1,0 +1,67 @@
+@import './variable.scss';
+
+.root {
+	max-width: 500px;
+	margin: auto;
+	padding: 10px;
+
+	.title {
+		font-weight: 600;
+	}
+
+	.form-container {
+		width: 80%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+
+		.input {
+			width: 100%;
+			padding: 7px 10px;
+			border-radius: 5px;
+			outline: none;
+			border: 1px solid #123412;
+		}
+
+		.add-button {
+			background-color: aqua;
+			border-radius: 5px;
+			border: 1px solid #123412;
+			padding: 5px 10px;
+		}
+	}
+
+	.list-item-container {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		.item-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border: 1px solid gray;
+			border-radius: 5px;
+			padding: 5px 10px;
+			.remove-item {
+				width: 25px;
+				height: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 100px;
+				border: 1px solid red;
+				color: red;
+			}
+		}
+	}
+}
+
+/*Tablet*/
+@media screen and (min-width: $breakpoint-tablet) {
+}
+
+/*desktop*/
+@media screen and (min-width: $breakpoint-desktop) {
+}
